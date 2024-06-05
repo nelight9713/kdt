@@ -6,11 +6,52 @@
     <title>HTML의 폼태그</title>
 </head>
 <body>
-    <textarea></textarea>
+    <form>
+        <label for="name">이름:</label><input id="name" type="text"></input><br><br>
+        <label for="age">나이:</label><input id="age" type="number" min="0"></input><br><br>
+        <label for="email">이메일:</label><input id="email" type="data"></input><br><br>
+        <label for="birthday">생년월일:</label><input id="birthday" type="date"></input><br><br>
+        <label for="country">국적:</label>
+        <select>
+            <option>대한민국</option>
+            <option>중국</option>
+            <option>일본</option>
+            <option>미국</option>
+            <option>영국</option>
+        <select><br><br>
+        <button type="reset">
+            초기화
+        </button>
+        <button type="submit">
+            제출하기
+        </button>
+    </form>
+
+    <!-- <div>
+        국가를 선택해 주세요
+    </div>
+    <input list = "datalist">
+    <datalist id="datalist">
+        <option value="대한민국"></option>
+        <option value="중국"></option>
+        <option value="일본"></option>
+        <option value="미국"></option>
+        <option value="영국"></option>
+    </datalist>
+    <br><br>
+    <select multiple>
+        <option>대한민국</option>
+        <option>중국</option>
+        <option>일본</option>
+        <option>미국</option>
+        <option>영국</option>
+    </select>
+    <div><textarea name="" id=""></textarea></div>
+    <textarea rows="4"></textarea>
     <br><br>
     <textarea>기본값은 이렇습니다&#13 그리고</textarea>
     <br><br>    
-    <label for="xxx">이름:</label><input id="xxx" type="text" name="data" readonly value="기본값" required>
+    <label for="xxx">이름:</label><input id="xxx" type="text" name="data" value="기본값" required>
 
     <br><br>
     <input placeholder="nesign9713@gmail.com">
