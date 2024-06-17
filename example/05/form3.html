@@ -1,0 +1,26 @@
+<style>
+    input:focus {
+        box-shadow: 0px 0px 0px 4px red;
+    }
+</style>
+
+<form method="post" action="https://httpbin.org/post">
+    <label for="name">이름: </label><input id="name" name="name"><br>
+    <label for="age">나이: </label><input id="age" 
+    type="number" min="0" name="age"><br>
+    <label for = "email">이메일: </label><input id="email" 
+    type="email" name="email"><br>
+    <label for = "birth">생일: </label><input id="birth"
+    type="date" name="date"><br>
+    <label for = "country">국가: </label>
+    <select id="country">
+        <option>대한민국</option>
+        <option>미국</option>
+        <option>중국</option>
+        <option>일본</option>
+        <option>영국</option>
+    </select>
+    <br><br>
+    <button type="reset">초기화</button>
+    <button type="submit">제출</button>
+</form>

@@ -1,0 +1,93 @@
+<!-- <style>
+    .container {
+        display: flex;
+        gap: 50px;
+        margin: 32px;
+    }
+
+    .rotate-deg {
+        transform: rotate(45deg);
+    }
+
+    .rotate-rad {
+        transform: rotate(180rad);
+    }
+
+    .rotate-turn {
+        transform: rotate(-0.5turn);
+    }
+
+    .box{
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+    }
+
+    .rotate-a {
+        transform: rotateY(60deg) rotateZ(120deg) rotateX(60deg);
+    }
+
+    .blue {
+        color: white;
+        background-color: blue;
+    }
+
+    .red {
+        color: white;
+        background-color: red;
+    }
+
+    .yellow {
+        background-color: yellow;
+    }
+
+</style>
+
+<div class="container">
+    <div class="box blue rotate-deg rotate-a">정사각형(각도)</div>
+    <div class="box red rotate-rad">정사각형(라디안)</div>
+    <div class="box yellow rotate-turn">정사각형(회전)</div>
+</div>
+ -->
+
+ <style>
+    .trans-a {
+        transform: translate(200px, 200px);
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        color: white
+    }
+    .scale-a {
+        transform: scale(2) translate(50px, 50px);
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        color: white;
+        z-index: 5;
+    }
+    .flex {
+        display: flex;
+    }
+
+    .box {
+        background-color: red;
+        color: white;
+        width: 200px;
+        height: 200px;
+        z-index: 3;
+    }
+
+    .sm-box {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        z-index: 7;
+    }
+ </style>
+
+ <div class="flex">
+    <div class="scale-a">정사각형</div>
+    <div class="sm-box">왼쪽에<br>정사각형 A가<br>있습니다.</div>
+ </div>
+ <div class="box">위에 정사각형 A가 있습니다.</div>

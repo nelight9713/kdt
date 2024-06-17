@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .linear {
+            height: 100px;
+            background: rgb(240,175,34);
+background: linear-gradient(90deg, rgba(240,175,34,1) 0%, rgba(247,165,11,1) 16%, rgba(243,0,255,1) 92%);
+        }
+
+        .radial {
+            height: 100px;
+            background: radial-gradient(red 10px, yellow 20px, blue 50px);
+            width: 100px;
+        }
+
+
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #00ff00
+        }
+
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to right, red, yellow, blue);
+        }
+        #name {
+            width: 100px;
+            height: 100px;
+            background-color:#0000ff
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <div class="linear">
+        div 태그에 스타일이 적용되었다.
+    </div>
+    <br>
+    <div class="radial">
+        모든 div에 일괄 적용
+    </div>
+</body>
+</html>
+

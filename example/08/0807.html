@@ -1,0 +1,53 @@
+<!-- <style>
+    .box {
+        width:150px;
+        height: 150px;
+        border: 2px solid #0000ff;
+    }
+    
+    .box ~ .box {
+        border-top: none;
+    }
+</style>
+<div class="box">첫 번째 상자</div>
+<div class="box">두 번째 상자</div>
+<div class="box">세 번째 상자</div> -->
+
+<!-- <style>
+    .box {
+        width: 150px;
+        height: 150px;
+        border: blue solid 2px;
+    }
+    .a + .b {
+        background-color: red;
+    }
+</style>
+
+<div class="a box">a 클래스</div>
+<div class="b box">b 클래스</div>
+<div class="b box">b 클래스</div> -->
+
+
+<style>
+    .form-wr > label {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .form-wr > input {
+        font-size: 20px;
+    }
+    .form-wr span {
+        color: red
+    }
+</style>
+
+<div class="form-wr">
+    <label>굵은 라벨</label>
+    <input placeholder="부모 요소 덕에 스타일 적용">
+    <div>
+        <span>친자식이 아니라도 선택</span>
+    </div>
+    
+</div>

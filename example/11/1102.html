@@ -1,0 +1,81 @@
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    .layout {
+        display: flex;
+        margin: auto;
+        max-width: 1024px;
+    }
+
+    .nav{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .border {
+        border: solid 1px black;
+    }
+
+    header {
+        width: 100%;
+        height: 50px;
+        font-size: 32;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .content-wr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        padding: 12px;
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .content-wr article {
+        aspect-ratio: 1;
+    }
+
+    @media screen and (max-width: 768px) {
+        .content-wr {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media screen and (max-width: 488px) {
+        .layout {
+            flex-direction: column;
+            padding: 16px;
+        }
+        .content-wr {
+            margin-top: 16px;
+            padding: 0;
+        }
+
+        nav {
+            max-width: 100%;
+        }
+    }
+
+
+</style>
+
+<header class="border">멋진 사이트 제목</header>
+<section class="layout border">
+    <nav class="border">
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+        </ul>
+    </nav>
+    <section class="content-wr">
+        <article class="border">내용1</article>
+        <article class="border">내용2</article>
+        <article class="border">내용3</article>
+        <article class="border"></article>
+    </section>
+</section>
