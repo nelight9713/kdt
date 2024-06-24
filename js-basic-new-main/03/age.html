@@ -9,7 +9,20 @@
 </head>
 <body>	
 	<button class="btn" onclick="calc()">나이 계산하기</button>
+	<button class="btn" onclick="back()">원래대로</button>
 	<div id="result" class="show">(결과 값 표시)</div>
+	<script>
+		function calc() {
+			var CurrentYear = 2024;
+			var birthYear = prompt("태어난 연도를 입력하세요.","YYYY");;
+			var age;
+			age = CurrentYear - BirthYear + 1;
+			document.querySelector("#result").innerHTML + "당신의 나이는" + age + "입니다.";
+		}
+		function back() {
+			document.querySelector("#result").innerHTML + "(결과값 표시)";
+		}
+	</script>
 
 </body>
 </html>

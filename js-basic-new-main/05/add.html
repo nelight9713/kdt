@@ -7,8 +7,17 @@
 	<title>함수</title>
 	<link rel="stylesheet" href="css/add.css">
 </head>
-<body>
-	<button>덧셈 계산하기</button>
-	
+<body>	
+	<button onclick = plus()>덧셈 계산하기</button>
+	<script>
+    	var a = parseInt(prompt("a 값을 입력하세요."));
+    	var b = parseInt(prompt("b 값을 입력하세요."));
+		var result = plus(a, b);
+		alert("두 수를 더한 값은 " + result + " 입니다.");
+		function plus(a, b) {
+			var sum = a + b;
+			return sum;
+		}
+	</script>
 </body>
 </html>

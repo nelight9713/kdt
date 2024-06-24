@@ -9,6 +9,22 @@
 </head>
 <body>
 	<div id="container">
+	<script>
+		var bigPic = document.querySelector("#cup");
+		var smallPic = document.querySelectorAll(".small");
+		smallPic.forEach(function(pic) {
+			pic.onclick = showBig;
+		})
+		
+		// for (let i = 0 ; i<smallPic.length;i++) {
+		// 	smallPic[i].onclick = showBig;
+		// }
+		function showBig() {
+			var newpic = this.src;
+			bigPic.setAttribute("src", newpic);
+		}
+
+	</script>
 			<h1 id="heading">에디오피아 게뎁</h1>
 			<div id="prod-pic">
 				<img src="images/coffee-pink.jpg" alt="에디오피아 게뎁" id="cup" width="200" height="200">

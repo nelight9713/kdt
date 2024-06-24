@@ -24,6 +24,17 @@
 			</li>
 		</ul>
 		<div id="showResult"></div>	
-	</div>	
+
+
+	</div>			
+	<script>
+		function showPrice() {	
+			var oPrice = document.querySelector("#oPrice").value;
+			var rate = document.querySelector("#rate").value;
+			var profit = (rate / 100) * oPrice;
+			var result = oPrice - profit;
+			document.querySelector("#showResult").innerHTML = "당신은" + oPrice + "를" + rate + "%의 할인을 통해" + profit + "만큼 절약한" +result+ "를 지불해야 합니다.";
+			}
+	</script>
 </body>
 </html>

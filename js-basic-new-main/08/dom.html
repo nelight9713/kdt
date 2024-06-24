@@ -9,6 +9,9 @@
 </head>
 
 <body>
+  <button id="open" onclick="open()">상세 설명 보이기</button>
+  <button id="hide" onclick="hide()">상세 설명 가리기</button>
+
   <div id="detail">
     <h2>상품 정보</h2>
     <ul>
@@ -25,6 +28,17 @@
     <h3>커피의 풍미</h3>
     <p>은은하고 다채로운 꽃향, 망고, 다크 체리, 달달함이 입안 가득.</p>
   </div>
+  <script>
+    function hide() {
+      document.querySelector("#detail p").style.visibility = "hidden";
+
+    }
+    function open() {
+      document.querySelector("#detail p").style.visibility = "visible";
+
+    }
+
+  </script>
 </body>
 
 </html>
